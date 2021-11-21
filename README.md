@@ -4,7 +4,7 @@ This is a really simple project that shows the usage of Next.js with TypeScript.
 
 ## Preview
 
-Preview the example live on [WebApp](wep-app-chakra-ui.vercel.app/):
+Preview the example live on [WebApp](https://wep-app-chakra-ui.vercel.app/):
 
 
 
