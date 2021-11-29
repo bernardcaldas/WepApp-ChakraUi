@@ -16,8 +16,21 @@ import {
   import { CheckIcon } from '@chakra-ui/icons';
   
   export default function BmiCard() {
-    const [bmi, setBmi] = useState();
+    const [bmiResult, setBmiResult] = useState();
     const [height, setHeight] = useState();
+    const [weight, setWeight] = useState();
+
+    function handleHeightChange(event) {
+      setHeight(event.target.value);
+    }
+    function handleWeightChange(event) {
+      setWeight(event.target.value);
+    }
+    function calculateBmi() {
+      const bmi = (weight / (height / 100) ** 2).toFixed(2);
+      setBmiResult(Number(bmi));
+    }
+
 
 
     return (
@@ -45,11 +58,11 @@ import {
             <Stack spacing={4} px={4}>
                 <FormControl id="weight">
                     <FormLabel>Input Weigth</FormLabel>
-                    <Input type="number"placeholder=" weight (kg)"/>
+                    <Input type="number"placeholder=" weight (kg)" value={weight} onChange={handleWeightChange}/>
                 </FormControl>
                 <FormControl id="height">
                     <FormLabel>Input Height</FormLabel>
-                    <Input type="number" placeholder="Height (cm)"/>
+                    <Input type="number" placeholder="Height (cm)" value={height} onChange={handleHeightChange}/>
                 </FormControl>
             </Stack>
   
