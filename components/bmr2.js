@@ -189,7 +189,7 @@ class bmr3 extends Component {
 
     <Center py={5}>
       <Box
-        maxW={'330px'}
+        maxW={'400px'}
         w={'full'}
         //bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'2xl'}
