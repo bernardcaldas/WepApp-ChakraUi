@@ -3,7 +3,6 @@ import  WithBackgroundImage from '../components/Hero';
 import  WithSpeechBubbles from '../components/Testimonials';
 import Simple from "../components/Contact";
 import SmallCentered from "../components/Footer";
-import BmiCard from '../components/Bmi';
 import BmiTest from '../components/bmi-test';
 import BMR from '../components/bmr2';
 
